@@ -1,5 +1,5 @@
 {
-  description = "nvim-snippet - a collection of snippets for different programming languages";
+  description = "nvim-snippets - a collection of snippets for different programming languages";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";

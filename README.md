@@ -1,12 +1,12 @@
-# nvim-snippet
+# nvim-snippets
 
-[![CI](https://github.com/nvim-contrib/nvim-snippet/actions/workflows/ci.yml/badge.svg)](https://github.com/nvim-contrib/nvim-snippet/actions/workflows/ci.yml)
-[![Release](https://github.com/nvim-contrib/nvim-snippet/actions/workflows/release.yml/badge.svg)](https://github.com/nvim-contrib/nvim-snippet/actions/workflows/release.yml)
+[![CI](https://github.com/nvim-contrib/nvim-snippets/actions/workflows/ci.yml/badge.svg)](https://github.com/nvim-contrib/nvim-snippets/actions/workflows/ci.yml)
+[![Release](https://github.com/nvim-contrib/nvim-snippets/actions/workflows/release.yml/badge.svg)](https://github.com/nvim-contrib/nvim-snippets/actions/workflows/release.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A curated collection of VS Code-compatible snippets for Neovim, focused on Go testing with the [Ginkgo](https://onsi.github.io/ginkgo/) BDD framework and [Gomega](https://onsi.github.io/gomega/) matchers.
+A curated collection of VS Code-compatible snippets for Neovim, covering multiple programming languages and testing frameworks.
 
-## Snippets
+## Go
 
 ### Ginkgo — Test Structure
 
@@ -59,11 +59,11 @@ Snippets are distributed in VS Code format and load via [LuaSnip](https://github
 {
   "L3MON4D3/LuaSnip",
   dependencies = {
-    "nvim-contrib/nvim-snippet",
+    "nvim-contrib/nvim-snippets",
   },
   config = function()
     require("luasnip.loaders.from_vscode").lazy_load {
-      paths = { vim.fn.stdpath("data") .. "/lazy/nvim-snippet" },
+      paths = { vim.fn.stdpath("data") .. "/lazy/nvim-snippets" },
     }
   end,
 }
@@ -75,14 +75,14 @@ Snippets are distributed in VS Code format and load via [LuaSnip](https://github
 {
   "L3MON4D3/LuaSnip",
   dependencies = {
-    "nvim-contrib/nvim-snippet",
+    "nvim-contrib/nvim-snippets",
   },
   config = function(plugin, opts)
     -- include the default AstroNvim LuaSnip config
     require("astronvim.plugins.configs.luasnip")(plugin, opts)
-    -- load nvim-snippet snippets
+    -- load nvim-snippets snippets
     require("luasnip.loaders.from_vscode").lazy_load {
-      paths = { vim.fn.stdpath("data") .. "/lazy/nvim-snippet" },
+      paths = { vim.fn.stdpath("data") .. "/lazy/nvim-snippets" },
     }
   end,
 }
@@ -93,7 +93,7 @@ Snippets are distributed in VS Code format and load via [LuaSnip](https://github
 Contributions are welcome! To add or improve snippets:
 
 1. Fork the repository
-2. Edit or add files under `src/snippets/`
+2. Edit or add files under `snippets/<language>/`
 3. Run `make validate` to check JSON validity
 4. Open a pull request
 
