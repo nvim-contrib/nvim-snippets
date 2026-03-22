@@ -8,6 +8,10 @@
       {
         "language": "go",
         "path": "./snippets/go/ginkgo.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/markdown/markdown.json"
       }
     ]
   }
