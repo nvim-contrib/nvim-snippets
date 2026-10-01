@@ -21,8 +21,6 @@ jobs:
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@v23
 
-      - name: Setup Nix Cache
-        uses: DeterminateSystems/magic-nix-cache-action@v15
 
       - name: Run Validation
         run: nix develop --command make validate
