@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# direnv
+.direnv/
+.envrc.local
+
+# Local nix build result symlinks (point into /nix/store).
+.nix
+.nix-*-link
