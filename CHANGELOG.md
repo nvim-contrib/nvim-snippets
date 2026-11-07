@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/nvim-contrib/nvim-snippets/compare/v0.2.2...v0.2.3) (2026-11-07)
+
+
+### Bug Fixes
+
+* **ci:** merge with the App token so main gets its CI run ([#44](https://github.com/nvim-contrib/nvim-snippets/issues/44)) ([9c115f1](https://github.com/nvim-contrib/nvim-snippets/commit/9c115f104ba5b9a5232e23e4a816836a2a2cfcfd))
+
 ## [0.2.2](https://github.com/nvim-contrib/nvim-snippets/compare/v0.2.1...v0.2.2) (2026-05-04)
 
 
